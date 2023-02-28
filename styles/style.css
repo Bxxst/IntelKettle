@@ -5,31 +5,6 @@
     padding: 0;
 }
 
-#header{
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    padding: 10px;
-    box-shadow: 0 1.5px 10px black;
-}
-
-.logo{
-    height: 60px;
-}
-
-.menu-inline{
-    align-self: center;
-    justify-content: center;
-    float: right;
-}
-
-ul.main-nav{
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-    align-self: center;
-    top: 50%;
-}
-
 a{
     font-family: Archivo Black;
     text-decoration: none;
@@ -48,6 +23,12 @@ a.download{
     border-radius: 10px;
     color: white;
     padding: 7px 20px;
+    transition: 0.5s;
+}
+
+a.download:hover{
+    color: black;
+    transition: 0.5s;
 }
 
 a.menu:hover{
@@ -58,6 +39,14 @@ a.menu:hover{
 .businessplan{
     align-self: center;
     text-align: center;
+}
+
+.content{
+    min-height: 120vh;
+}
+
+.logo{
+    height: 60px;
 }
 
 /*
@@ -73,19 +62,72 @@ a.menu:hover{
     float: right;
 }
 
-.black{
-    background-color: black;
-    height: 7px;
-    width: 40px;
-    border-radius: 5px;
-}
-
-.white{
-    background-color: white;
-    height: 7px;
-    width: 40px;
-}*/
+*/
 
 @media only screen and (max-width:850px){
+    .click-menu{
+        width: 35px;
+        height: 35px;
+        margin: 12px;
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+
+    .bar{
+        width: 35px;
+        height: 5px;
+        border-radius: 5px;
+        background: black;
+        margin: 5px 0px;
+    }
+
+    #header{
+        display: grid;
+        position: sticky;
+        top: 0%;
+        grid-template-columns: 20% 80%;
+        padding: 10px;
+        box-shadow: 0 5px 15px rgb(162, 162, 162);
+    }
+
+    ul.main-nav{
+        position: absolute;
+        right: -15em;
+        float: right;
+        list-style-type: none;
+    }
+
+    .menu-inline{
+        position: none;
+    }
+}
+
+@media only screen and (min-width:850px){
+    .click-menu{
+        display: none;
+    }
+
+    #header{
+        display: grid;
+        position: sticky;
+        top: 0%;
+        grid-template-columns: 20% 80%;
+        padding: 10px;
+        box-shadow: 0 5px 15px rgb(162, 162, 162);
+    }
+
+    .menu-inline{
+        align-self: center;
+        justify-content: center;
+        float: right;
+    }
     
+    ul.main-nav{
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        align-self: center;
+        top: 50%;
+    }
 }
