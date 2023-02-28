@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 *{
     margin: 0;
@@ -15,6 +15,51 @@
     height: 60px;
 }
 
+.menu-inline{
+    align-self: center;
+    justify-content: center;
+    float: right;
+}
+
+ul.main-nav{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-self: center;
+    top: 50%;
+}
+
+a{
+    font-family: Archivo Black;
+    text-decoration: none;
+}
+
+a.menu{
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+a.download{
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    padding: 7px 20px;
+}
+
+a.menu:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+.businessplan{
+    align-self: center;
+    text-align: center;
+}
+
+/*
 .title{
     font-size: 35px;
     font-weight: 600;
@@ -38,4 +83,4 @@
     background-color: white;
     height: 7px;
     width: 40px;
-}
+}*/
