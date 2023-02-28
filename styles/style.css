@@ -13,7 +13,7 @@ a{
 a.menu{
     color: black;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 17px;
     margin-right: 20px;
     transition: 0.3s;
 }
@@ -47,6 +47,7 @@ a.menu:hover{
 
 .logo{
     height: 60px;
+    cursor: pointer;
 }
 
 /*
@@ -74,6 +75,10 @@ a.menu:hover{
         cursor: pointer;
     }
 
+    .click-menu:hover{
+        animation: menuhover 1s ease-in-out;
+    }
+
     .bar{
         width: 35px;
         height: 5px;
@@ -86,20 +91,24 @@ a.menu:hover{
         display: grid;
         position: sticky;
         top: 0%;
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 50% 50%;
         padding: 10px;
         box-shadow: 0 5px 15px rgb(162, 162, 162);
     }
 
     ul.main-nav{
         position: absolute;
+        text-align: end;
         right: -15em;
         float: right;
         list-style-type: none;
     }
 
     .menu-inline{
-        position: none;
+        position: none;/*position: absolute;
+        right: -15em;
+        float: right;
+        list-style-type: none;*/
     }
 }
 
@@ -130,4 +139,9 @@ a.menu:hover{
         align-self: center;
         top: 50%;
     }
+}
+
+@keyframes menuhover {
+    20%{scale: 70%}
+    50%{scale: 140%;}
 }
