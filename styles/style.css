@@ -43,14 +43,14 @@ a.menu{
 }
 
 a.download{
-    background-color: red;
+    background: linear-gradient(to right, #ff0e0e, #7d0303);
     border-radius: 10px;
     color: white;
     padding: 7px 20px;
 }
 
 a.menu:hover{
-    color: red;
+    color: #b60b0b;
     transition: 0.3s;
 }
 
