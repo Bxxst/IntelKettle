@@ -7,11 +7,13 @@
     <title>Strona Główna</title>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="shortcut icon" href="/img/intelkettle.ico">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 </head>
 <body>
     <div id="header">
         <div class="grid-element logo-text"><img src="/img/InteliKettle_text.png" alt="logo" class="logo" id="logo"></div>
-        <div class="grid-element menu-inline">
+        <div class="grid-element menu-inline" id="menu">
             <div class="click-menu" id="click-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -21,16 +23,20 @@
                 <li class="nav-content"><a href="" class="menu">Strona główna</a></li>
                 <li class="nav-content"><a href="" class="menu">O nas</a></li>
                 <li class="nav-content"><a href="" class="menu">Wizja Firmy</a></li>
-                <li class="nav-content"><a href="" class="download">Biznesplan</a></li>
+                <li class="nav-content"><a href="/documents/InteliKettle_Biznesplan.pdf" target="_blank" class="download">Biznesplan</a></li>
             </ul>
         </div>
     </div>
     <div id="container">
         <div class="content">
-            sdadwad
+            <div id="ak1">
+                <p>Firma IntelKettle ma na celu produkcję inteligentnych czajników, które będą wyróżniać się innowacyjnymi funkcjami i wysoką jakością wykonania. Będziemy stawiać na szybką i efektywną obsługę klienta oraz na budowanie długotrwałych relacji z klientami. Naszym celem jest osiągnięcie pozycji wiodącego producenta inteligentnych czajników na rynku, co przyniesie nam zyski netto w wysokości 200 000 dolarów rocznie. Będziemy działać w oparciu o strategie innowacyjności, jakości oraz marketingu, co pozwoli nam na zwiększenie rozpoznawalności naszej marki oraz na pozyskanie coraz większej liczby klientów.</p>
+                <p>W ciągu 5 lat chcemy zostać wiodącą firmą produkującą oraz sprzedającą największą ilość czajników, zdobywając coraz więcej potencjalnych klientów urozmaicając nasz produkt o nowe technologiczne pomysły. Chcemy również dopasować czajnik do różnych odbiorców więc planujemy również zwiększyć wybór wśród InteliKettle dodając różne modele.</p>
+            </div>
         </div>
     </div>
     <div id="footer"></div>
     <script src="script.js"></script>
+    <script src="script.jsx"></script>
 </body>
 </html>

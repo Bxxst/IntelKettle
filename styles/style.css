@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Mukta:wght@500&display=swap');
 
 *{
     margin: 0;
@@ -19,7 +19,7 @@ a.menu{
 }
 
 a.download{
-    background: linear-gradient(to right, #ff0e0e, #7d0303);
+    background: #E30613;
     border-radius: 10px;
     color: white;
     padding: 7px 20px;
@@ -41,13 +41,22 @@ a.menu:hover{
     text-align: center;
 }
 
-.content{
-    min-height: 120vh;
+body{
+    font-family: Archivo black;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
 }
 
 .logo{
     height: 60px;
     cursor: pointer;
+}
+
+p{
+    padding-bottom: 7px;
 }
 
 /*
@@ -66,6 +75,14 @@ a.menu:hover{
 */
 
 @media only screen and (max-width:850px){
+    .bar{
+        width: 35px;
+        height: 5px;
+        border-radius: 5px;
+        background: black;
+        margin: 5px 0px;
+    }
+
     .click-menu{
         width: 35px;
         height: 35px;
@@ -79,15 +96,20 @@ a.menu:hover{
         animation: menuhover 1s ease-in-out;
     }
 
-    .bar{
-        width: 35px;
-        height: 5px;
-        border-radius: 5px;
-        background: black;
-        margin: 5px 0px;
+    .content{
+        font-family: Mukta;
+        width: 90%;
+        font-size: 15px;
+        min-height: 30vh;
+        margin-top: 40px;
+        padding: 20px;
+        display: flex;
+        justify-content: start;
+        background-color: aliceblue;
     }
 
     #header{
+        background-color: white;
         display: grid;
         position: sticky;
         top: 0%;
@@ -97,6 +119,7 @@ a.menu:hover{
     }
 
     ul.main-nav{
+        display: none;
         position: absolute;
         text-align: end;
         right: -15em;
@@ -116,8 +139,23 @@ a.menu:hover{
     .click-menu{
         display: none;
     }
+    
+    .content{
+        font-family: Mukta;
+        width: 70%;
+        font-size: 19px;
+        min-height: 30vh;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 40px;
+        padding: 30px;
+        display: flex;
+        justify-content: start;
+        background-color: aliceblue;
+    }
 
     #header{
+        background-color: white;
         display: grid;
         position: sticky;
         top: 0%;
